@@ -1,0 +1,23 @@
+-- Add more detailed client information fields to client_registrations table
+ALTER TABLE public.client_registrations 
+ADD COLUMN IF NOT EXISTS job_title text,
+ADD COLUMN IF NOT EXISTS company_name text,
+ADD COLUMN IF NOT EXISTS mobile_number text,
+ADD COLUMN IF NOT EXISTS country text,
+ADD COLUMN IF NOT EXISTS date_of_birth date,
+ADD COLUMN IF NOT EXISTS gender text,
+ADD COLUMN IF NOT EXISTS address text,
+ADD COLUMN IF NOT EXISTS city text,
+ADD COLUMN IF NOT EXISTS state_province text,
+ADD COLUMN IF NOT EXISTS postal_code text,
+ADD COLUMN IF NOT EXISTS linkedin_profile text,
+ADD COLUMN IF NOT EXISTS emergency_contact_name text,
+ADD COLUMN IF NOT EXISTS emergency_contact_phone text,
+ADD COLUMN IF NOT EXISTS client_status text DEFAULT 'active',
+ADD COLUMN IF NOT EXISTS preferred_language text DEFAULT 'English',
+ADD COLUMN IF NOT EXISTS investment_experience text,
+ADD COLUMN IF NOT EXISTS annual_income_range text,
+ADD COLUMN IF NOT EXISTS risk_tolerance text,
+ADD COLUMN IF NOT EXISTS investment_goals text,
+ADD COLUMN IF NOT EXISTS referral_source text,
+ADD COLUMN IF NOT EXISTS notes text;

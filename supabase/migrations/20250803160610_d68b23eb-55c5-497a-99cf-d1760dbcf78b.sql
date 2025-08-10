@@ -1,0 +1,1 @@
+UPDATE sessions SET credits_required = 10 WHERE id = 'bb72bca2-3bb9-44b7-baa5-82f1bbf129f8' AND title = 'Investment Fundamentals Seminar';
